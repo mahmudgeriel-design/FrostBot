@@ -16,13 +16,15 @@
     </properties>
 
     <repositories>
+        <!-- Рабочий архивный репозиторий PaperMC -->
         <repository>
-            <id>papermc</id>
+            <id>papermc-repo</id>
             <url>https://papermc.io</url>
         </repository>
     </repositories>
 
     <dependencies>
+        <!-- Правильная зависимость для 1.16.5 -->
         <dependency>
             <groupId>com.destroystokyo.paper</groupId>
             <artifactId>paper-api</artifactId>
