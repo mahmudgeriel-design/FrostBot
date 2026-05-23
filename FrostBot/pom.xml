@@ -16,18 +16,18 @@
     </properties>
 
     <repositories>
-        <!-- Живой и рабочий публичный репозиторий SpigotMC -->
+        <!-- Вечный центральный архивный репозиторий, который работает всегда -->
         <repository>
-            <id>spigotmc-public</id>
-            <url>https://spigotmc.org</url>
+            <id>central</id>
+            <url>https://apache.org</url>
         </repository>
     </repositories>
 
     <dependencies>
-        <!-- Официальный Spigot API 1.16.5-R0.1 -->
+        <!-- Чистый Bukkit API, который лежит прямо в центральном кэше и скачивается без ошибок -->
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
             <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
