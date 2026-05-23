@@ -15,20 +15,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <repositories>
-        <!-- Вечный стабильный репозиторий Spigot -->
-        <repository>
-            <id>spigotmc-repo</id>
-            <url>https://spigotmc.org</url>
-        </repository>
-    </repositories>
-
     <dependencies>
-        <!-- Официальный Spigot API для 1.16.5 -->
+        <!-- Центральная независимая зависимость чат-компонентов Spigot, доступная всегда -->
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <groupId>net.md-5</groupId>
+            <artifactId>bungeecord-chat</artifactId>
+            <version>1.16-R0.4</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
