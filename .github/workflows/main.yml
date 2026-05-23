@@ -5,19 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
         java-version: '17'
         distribution: 'temurin'
-        
-    - name: Clear Corrupted Maven Cache
-      run: rm -rf /home/runner/.m2/repository/org/spigotmc/spigot-api
-        
+        cache: maven
     - name: Build with Maven
       run: mvn -f FrostBot/pom.xml clean package
-      
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
