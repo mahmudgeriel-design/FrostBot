@@ -16,19 +16,19 @@
     </properties>
 
     <repositories>
-        <!-- Вечный центральный архивный репозиторий, который работает всегда -->
+        <!-- Стабильный публичный репозиторий CodeMC для плагинов -->
         <repository>
-            <id>central</id>
-            <url>https://apache.org</url>
+            <id>codemc-repo</id>
+            <url>https://codemc.io</url>
         </repository>
     </repositories>
 
     <dependencies>
-        <!-- Чистый Bukkit API, который лежит прямо в центральном кэше и скачивается без ошибок -->
+        <!-- Сборка Spigot-API 1.16.5 из надежного источника CodeMC -->
         <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.16.5-R0.1-20210608.204543-34</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
