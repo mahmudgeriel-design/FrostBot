@@ -16,7 +16,7 @@
     </properties>
 
     <repositories>
-        <!-- Стабильный публичный репозиторий CodeMC для плагинов -->
+        <!-- Рабочий репозиторий CodeMC, который отдает целые файлы -->
         <repository>
             <id>codemc-repo</id>
             <url>https://codemc.io</url>
@@ -24,7 +24,7 @@
     </repositories>
 
     <dependencies>
-        <!-- Сборка Spigot-API 1.16.5 из надежного источника CodeMC -->
+        <!-- Меняем версию на конкретный рабочий билд, чтобы обойти битый кэш -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
