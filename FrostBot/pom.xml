@@ -16,18 +16,18 @@
     </properties>
 
     <repositories>
-        <!-- Рабочий архивный репозиторий PaperMC -->
+        <!-- Вечный стабильный репозиторий Spigot -->
         <repository>
-            <id>papermc-repo</id>
-            <url>https://papermc.io</url>
+            <id>spigotmc-repo</id>
+            <url>https://spigotmc.org</url>
         </repository>
     </repositories>
 
     <dependencies>
-        <!-- Правильная зависимость для 1.16.5 -->
+        <!-- Официальный Spigot API для 1.16.5 -->
         <dependency>
-            <groupId>com.destroystokyo.paper</groupId>
-            <artifactId>paper-api</artifactId>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
             <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
